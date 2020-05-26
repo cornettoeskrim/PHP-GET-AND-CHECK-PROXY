@@ -33,7 +33,7 @@ for ($i = 0; $i < $total; $i++) {
     $count++;
     echo " \e[0;33m[$count/$total]\e[0m";
     if ($res_time == 0) {
-        echo " $ip:$port ->\e[0;31m RESPONSE:[$res_time/s] COUNTRY:[$country]\e[0m Anomonity : $type\e[1;31m => DEAD\e[0m\n";
+        echo " $ip:$port ->\e[0;31m RESPONSE:[$res_time/s]\e[1;31m => DEAD\e[0m\n";
     } else {
         echo " $ip:$port ->\e[0;36m RESPONSE:[$res_time/s] COUNTRY:[$country]\e[0m Anomonity : $type\e[1;32m => LIVE\e[0m\n";
         $fp = fopen("live_shocks.txt", 'a');
